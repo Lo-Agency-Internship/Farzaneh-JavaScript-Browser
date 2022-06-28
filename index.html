@@ -3,15 +3,78 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hex Change Background Color</title>
+        <link rel="stylesheet" href=" style.css">
+        <title> Filter the store items by class</title>
     </head>
     <body>
+      
         <h1>
-            
-            <button onclick='changingbackgroundColor()' id="colour">Click here to change background color</button>
-            
+            This project involves wiring up two different sections. 
+            The first section is the filter buttons, whose purposes are to filter the store items by class. 
+            The second section is the search filter, whose purpose is to filter the store items by a search.
         </h1>
 
+          <header class="header">
+            <div id="head">You can choose whatever you want!</div>
+            <ul>
+              <li class=" active">All </li>
+              <li>Cakes </li>
+              <li>Cupcakes </li>
+              <li>Sweets </li>
+              <li>Dougnuts </li>
+            </ul>
+
+              <!-- searchBar -->
+              
+              <div class="searchbar">
+                <button class="searchbar-btn"  onclick="searchBar()">
+                  <svg
+                    id="svg-btn"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    role="presentation"
+                    focusable="false"
+                    style="
+                      display: block;
+                      fill: none;
+                      height: 16px;
+                      width: 16px;
+                      stroke: currentcolor;
+                      stroke-width: 4;
+                      overflow: visible;
+                    "
+                  >
+                    <g fill="none">
+                      <path
+                        d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"
+                      ></path>
+                    </g>
+                  </svg>
+                </button>
+                <input
+                  type="text"
+                  placeholder="Search here..."
+                  id="searchBarText"
+                >
+              </div>
+            </div>
+          </header>
+          <section>
+            <div class="Objects">
+              <img src="/images/cake-2.jpeg" class="cakes" >
+              <img src="/images/cake-3.jpeg" class="cakes" >
+              <img src="/images/cake.jpeg" class="cakes" >
+              <img src="/images/cupcake-1.jpeg" class="cupcakes" >
+              <img src="/images/cupcake-2.jpeg" class="cupcakes" >
+              <img src="/images/cupcake.jpeg" class="cupcakes" >
+              <img src="/images/doughnut-2.jpeg" class="dougnuts" >
+              <img src="/images/doughnut-3.jpeg" class="dougnuts" >
+              <img src="/images/sweets.jpeg" class="sweets" >
+              
+            </div>
+          </section>
     </body>
-    <script src="JavaScript.js"></script>
+      
+    <script src="filter.js"></script>
 </html>

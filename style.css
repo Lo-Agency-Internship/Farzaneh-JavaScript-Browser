@@ -1,0 +1,82 @@
+* { 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  header {
+    margin: 0;
+    padding: 0;
+    height: 25vh;
+  }
+  
+  body {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  ul li{
+    list-style: none;
+    background-color: rgba(255, 255, 255,0.5);
+    padding: 5px 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+  ul li.active{
+    background-color: hsla(282, 88%, 56%, 0.905);
+  }
+
+/* .box {
+    text-align: center;
+    line-height: 50px;
+    margin: 10px;
+    
+}
+
+.buttons {
+   
+    text-align: center; */
+  }
+
+  .Objects{
+    width: 100px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+  .Objects img{
+    width: 400px;
+    height: 300px;
+  }
+  .searchbar-btn{
+    float: left;
+    padding: 12px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  .searchbar{
+    float:inline-end;
+    padding: 2px;
+    margin-top: 12px;
+    margin-right: 110px;
+    font-size: 24px;
+  }
+  #searchbartext{
+    font-size: 24px;
+    margin-top: 12px;
+
+  }
